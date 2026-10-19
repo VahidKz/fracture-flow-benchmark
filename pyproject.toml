@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fracture-flow-benchmark"
+version = "0.1.0"
+description = "Verified 1D groundwater flow and stress-dependent cubic-law fracture experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "VahidKz"}]
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff==0.17.1", "build>=1.2,<2"]
+
+[project.scripts]
+fracture-benchmark = "fracture_flow_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fracture_flow_benchmark*"]
+
+[tool.setuptools.package-data]
+fracture_flow_benchmark = ["data/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

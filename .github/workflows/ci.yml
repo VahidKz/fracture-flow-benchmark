@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verification:
+    name: Verify Python ${{ matrix.python }}
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: |
+            pyproject.toml
+            requirements-repro.txt
+      - name: Install package and development tools
+        run: python -m pip install -c requirements-repro.txt -e '.[dev]'
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+      - name: Reproduce all experiments with accuracy gates
+        run: python -m fracture_flow_benchmark reproduce --output results-local/ci
+      - name: Build source distribution and wheel
+        run: python -m build
+      - name: Verify installed wheel includes the coefficient dataset
+        shell: bash
+        run: |
+          python -m pip uninstall -y fracture-flow-benchmark
+          python -m pip install --no-deps dist/*.whl
+          cd "$RUNNER_TEMP"
+          fracture-benchmark reproduce --output wheel-results
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: verified-results-python-${{ matrix.python }}
+          path: results-local/ci/

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this implementation, cite this repository and the original scientific references in docs/references.bib."
+title: "Fracture Flow Benchmark: Verified groundwater and stress-dependent fracture flow"
+type: software
+authors:
+  - name: VahidKz
+version: 0.1.0
+date-released: '2026-10-20'
+url: 'https://github.com/VahidKz/fracture-flow-benchmark'
+license: MIT

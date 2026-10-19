@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "software": {
+    "project": "0.1.0",
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  },
+  "provenance": {
+    "seed": 42,
+    "spectral_modes": 100,
+    "correlation": "Gaussian",
+    "modes_sha256": "d2c1f018c69c54682dfdebb75134a91187d4c98a4e743865aad8d092b392ade1",
+    "benchmark_reference": "https://arxiv.org/html/1911.10774v2",
+    "realization": "independently generated; not the authors' coefficient files"
+  },
+  "units": {
+    "length": "m",
+    "head": "m",
+    "pressure_and_stress": "Pa",
+    "hydraulic_conductivity": "m/s",
+    "groundwater_source": "1/s",
+    "aperture": "m",
+    "discharge_per_unit_width": "m^2/s",
+    "viscosity": "Pa s",
+    "density": "kg/m^3"
+  },
+  "groundwater": [
+    {
+      "parameters": {
+        "length_m": 200.0,
+        "correlation_length_m": 1.0,
+        "mean_conductivity_m_s": 0.00017361111111111112,
+        "log_variance": 0.1
+      },
+      "refinements": [
+        {
+          "intervals": 1000,
+          "dx_m": 0.2,
+          "l2_error_m_sqrt_m": 0.044261187454167454,
+          "relative_l2_error": 0.0010149074903828713,
+          "max_head_error_m": 0.006937171040880319,
+          "observed_order": null,
+          "scaled_linear_residual": 5.734421674208948e-17,
+          "relative_mass_balance": 3.764444232836531e-16
+        },
+        {
+          "intervals": 2000,
+          "dx_m": 0.1,
+          "l2_error_m_sqrt_m": 0.011072254747985935,
+          "relative_l2_error": 0.00025384064380247235,
+          "max_head_error_m": 0.001733909076520046,
+          "observed_order": 1.9990931150933733,
+          "scaled_linear_residual": 5.701672705010597e-17,
+          "relative_mass_balance": 2.431823358084651e-15
+        },
+        {
+          "intervals": 4000,
+          "dx_m": 0.05,
+          "l2_error_m_sqrt_m": 0.002768464669238931,
+          "relative_l2_error": 6.346367472247902e-05,
+          "max_head_error_m": 0.000433881371493694,
+          "observed_order": 1.9997910260522649,
+          "scaled_linear_residual": 8.52941774394173e-17,
+          "relative_mass_balance": 4.024248679322859e-15
+        },
+        {
+          "intervals": 8000,
+          "dx_m": 0.025,
+          "l2_error_m_sqrt_m": 0.0006921401151632943,
+          "relative_l2_error": 1.5865760449100504e-05,
+          "max_head_error_m": 0.00010846874041670063,
+          "observed_order": 1.999950082293266,
+          "scaled_linear_residual": 8.525581094833734e-17,
+          "relative_mass_balance": 2.313386639300319e-14
+        },
+        {
+          "intervals": 16000,
+          "dx_m": 0.0125,
+          "l2_error_m_sqrt_m": 0.00017303754920539686,
+          "relative_l2_error": 3.966409653753685e-06,
+          "max_head_error_m": 2.7118604111198152e-05,
+          "observed_order": 1.9999789859709372,
+          "scaled_linear_residual": 8.523894009791314e-17,
+          "relative_mass_balance": 4.429010480170568e-14
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "length_m": 200.0,
+        "correlation_length_m": 1.0,
+        "mean_conductivity_m_s": 0.00017361111111111112,
+        "log_variance": 1.0
+      },
+      "refinements": [
+        {
+          "intervals": 1000,
+          "dx_m": 0.2,
+          "l2_error_m_sqrt_m": 0.1011215554392166,
+          "relative_l2_error": 0.002318713752555786,
+          "max_head_error_m": 0.01716369409631824,
+          "observed_order": null,
+          "scaled_linear_residual": 6.866355430216838e-17,
+          "relative_mass_balance": 5.187331383328378e-16
+        },
+        {
+          "intervals": 2000,
+          "dx_m": 0.1,
+          "l2_error_m_sqrt_m": 0.025542032441912374,
+          "relative_l2_error": 0.0005855723252987881,
+          "max_head_error_m": 0.004278168865595067,
+          "observed_order": 1.9851453266650387,
+          "scaled_linear_residual": 4.492422659434383e-17,
+          "relative_mass_balance": 7.827146168545753e-16
+        },
+        {
+          "intervals": 4000,
+          "dx_m": 0.05,
+          "l2_error_m_sqrt_m": 0.006401645587025065,
+          "relative_l2_error": 0.00014674991439758513,
+          "max_head_error_m": 0.0010687972470129203,
+          "observed_order": 1.996358615795607,
+          "scaled_linear_residual": 4.45547262115266e-17,
+          "relative_mass_balance": 4.419977096090926e-15
+        },
+        {
+          "intervals": 8000,
+          "dx_m": 0.025,
+          "l2_error_m_sqrt_m": 0.0016014159834489732,
+          "relative_l2_error": 3.670887124750421e-05,
+          "max_head_error_m": 0.0002671537240983568,
+          "observed_order": 1.9990946967995658,
+          "scaled_linear_residual": 8.901558363609404e-17,
+          "relative_mass_balance": 1.2533698187147463e-14
+        },
+        {
+          "intervals": 16000,
+          "dx_m": 0.0125,
+          "l2_error_m_sqrt_m": 0.00040041834127042646,
+          "relative_l2_error": 9.17848860925454e-06,
+          "max_head_error_m": 6.678620667743829e-05,
+          "observed_order": 1.9997681468322894,
+          "scaled_linear_residual": 8.897876091892324e-17,
+          "relative_mass_balance": 4.1676791445883655e-14
+        }
+      ]
+    }
+  ],
+  "cubic_law": {
+    "fitted_exponent": 2.9999999999999956,
+    "aperture_min_m": 5e-06,
+    "aperture_max_m": 0.0001,
+    "sweep_pressure_drop_pa": 1000.0,
+    "sweep_length_m": 100.0,
+    "stress_sweep_max_pa": 40000000.0,
+    "remaining_flow_fraction_at_max_stress": 0.003764060356652948
+  },
+  "constant_aperture": {
+    "aperture_m": 2.5e-05,
+    "parameters": {
+      "length_m": 100.0,
+      "normal_stress_pa": 20000000.0,
+      "inlet_pressure_pa": 12000000.0,
+      "outlet_pressure_pa": 2000000.0,
+      "viscosity_pa_s": 0.001,
+      "density_kg_m3": 1000.0
+    },
+    "analytical_q_m2_s": 1.3020833333333337e-07,
+    "numerical_q_m2_s": 1.3020833333333337e-07,
+    "relative_pressure_error": 1.1315569281578064e-14,
+    "max_relative_face_flux_error": 1.4921397450962104e-13,
+    "reynolds_hydraulic_diameter_2b": 0.2604166666666667
+  },
+  "fracture": {
+    "parameters": {
+      "length_m": 100.0,
+      "normal_stress_pa": 20000000.0,
+      "inlet_pressure_pa": 12000000.0,
+      "outlet_pressure_pa": 2000000.0,
+      "viscosity_pa_s": 0.001,
+      "density_kg_m3": 1000.0
+    },
+    "aperture_law": {
+      "initial_m": 0.0001,
+      "residual_m": 5e-06,
+      "closure_stress_pa": 5000000.0,
+      "alpha": 1.0
+    },
+    "intervals": 400,
+    "iterations": 36,
+    "numerical_q_m2_s": 2.921208762190251e-07,
+    "quadrature_q_m2_s": 2.9212112077207036e-07,
+    "relative_discharge_error": 8.371631760829342e-07,
+    "relative_flux_imbalance": 9.957888168650475e-11,
+    "relative_pressure_update": 9.021411339441935e-12,
+    "frozen_linear_system_residual": 7.60182971069846e-17,
+    "frozen_aperture_m": 3.138888888888889e-05,
+    "frozen_q_m2_s": 2.57719085791038e-07,
+    "discharge_increase_over_frozen_fraction": 0.13348561408401283,
+    "reynolds_hydraulic_diameter_2b": 0.5842417524380502,
+    "laminar_screen_threshold": 1.0,
+    "within_laminar_screen": true
+  },
+  "acceptance": {
+    "passed": true,
+    "checks": {
+      "groundwater_relative_head_error": true,
+      "groundwater_second_order": true,
+      "groundwater_conservation": true,
+      "groundwater_linear_residual": true,
+      "cubic_exponent_three": true,
+      "constant_aperture_pressure": true,
+      "constant_aperture_discharge": true,
+      "fracture_quadrature_agreement": true,
+      "fracture_conservation": true,
+      "fracture_laminar_screen": true
+    }
+  }
+}

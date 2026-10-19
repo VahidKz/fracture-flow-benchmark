@@ -1,0 +1,3 @@
+results/*.csv linguist-generated=true
+results/*.json linguist-generated=true
+results/*.svg linguist-generated=true
