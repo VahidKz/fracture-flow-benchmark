@@ -53,7 +53,7 @@ Hydraulic aperture follows a closure proxy; parameters are not fitted to rock me
 This is a 1D, saturated, isothermal, steady-flow study under prescribed normal stress.
 It includes no geochemistry, shear, fracture propagation, fracture networks, or full poroelasticity.
 See [equations, units, and numerical methods](docs/methods.md), [references](docs/references.bib),
-and [self-review](docs/self-review.md).
+and [software citation](CITATION.cff).
 
 ## Verification
 

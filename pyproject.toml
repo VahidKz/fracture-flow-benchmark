@@ -9,7 +9,7 @@ description = "Verified 1D groundwater flow and stress-dependent cubic-law fract
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{name = "VahidKz"}]
+authors = [{name = "Vahid Keshavarz"}]
 dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "matplotlib>=3.8,<4"]
 
 [project.optional-dependencies]

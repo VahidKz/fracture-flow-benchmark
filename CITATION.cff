@@ -3,7 +3,8 @@ message: "If you use this implementation, cite this repository and the original 
 title: "Fracture Flow Benchmark: Verified groundwater and stress-dependent fracture flow"
 type: software
 authors:
-  - name: VahidKz
+  - family-names: Keshavarz
+    given-names: Vahid
 version: 0.1.0
 date-released: '2026-10-20'
 url: 'https://github.com/VahidKz/fracture-flow-benchmark'
